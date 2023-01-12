@@ -13,6 +13,15 @@ public:
 	int insert(std::map<std::string, std::string>& datahandler);
 	int save();
 	int remove();
+	std::vector<std::map<std::string, std::string>> where(std::string, std::string);
+
+
+public:
+	int count();//数据量
+	void truncate();//清空表
+
+
+
 
 	inline static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
 		int i;

@@ -48,5 +48,29 @@ int Model::save()
 
 int Model::remove()
 {
-	return 0;
+	if (m_vecDatahandler->empty())
+	{
+		return 1;
+	}
+
+	std::vector<std::map<std::string, std::string>>::iterator it = m_vecDatahandler->begin();
+	std::string sKey = "";
+	std::string sValues = "";
+	std::string sSql = "";
+	int rc = 0;
+	for (; it != m_vecDatahandler->end(); ++it)
+	{
+		sKey = (*it).begin()->first;
+		sValues = (*it).begin()->second;
+		sSql = "delete from " + m_sTableName + " where " + sKey + '=' + sValues;
+		rc |= sqlite3_exec(m_Modb->m_db, sSql.c_str(), callback, 0, &(m_Modb->m_zErrMsg));
+	}
+	return rc;
 }
+
+std::vector<std::map<std::string, std::string>> Model::where(std::string key, std::string val)
+{
+	return std::vector<std::map<std::string, std::string>>();
+}
+
+
