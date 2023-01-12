@@ -1,0 +1,37 @@
+﻿D:\Program Files\Microsoft Visual Studio\2017\Professional\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  IniFile.cpp
+d:\mycode\cpp\upacstool\upt_iniparser\inifile.h(68): warning C4251: “UPT::utility::IniFile::m_filename”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“UPT::utility::IniFile”的客户端使用
+  d:\program files\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+d:\mycode\cpp\upacstool\upt_iniparser\inifile.h(69): warning C4251: “UPT::utility::IniFile::m_sections”: class“std::map<std::string,UPT::utility::Section,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>”需要有 dll 接口由 class“UPT::utility::IniFile”的客户端使用
+          with
+          [
+              _Kty=std::string,
+              _Ty=UPT::utility::Section
+          ]
+  d:\mycode\cpp\upacstool\upt_iniparser\inifile.h(69): note: 参见“std::map<std::string,UPT::utility::Section,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>”的声明
+          with
+          [
+              _Kty=std::string,
+              _Ty=UPT::utility::Section
+          ]
+d:\mycode\cpp\upacstool\upt_iniparser\inifile.cpp(101): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+d:\mycode\cpp\upacstool\upt_iniparser\inifile.cpp(108): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  main.cpp
+d:\mycode\cpp\upacstool\upt_iniparser\inifile.h(68): warning C4251: “UPT::utility::IniFile::m_filename”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“UPT::utility::IniFile”的客户端使用
+  d:\program files\microsoft visual studio\2017\professional\vc\tools\msvc\14.16.27023\include\xstring(4373): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+d:\mycode\cpp\upacstool\upt_iniparser\inifile.h(69): warning C4251: “UPT::utility::IniFile::m_sections”: class“std::map<std::string,UPT::utility::Section,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>”需要有 dll 接口由 class“UPT::utility::IniFile”的客户端使用
+          with
+          [
+              _Kty=std::string,
+              _Ty=UPT::utility::Section
+          ]
+  d:\mycode\cpp\upacstool\upt_iniparser\inifile.h(69): note: 参见“std::map<std::string,UPT::utility::Section,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>”的声明
+          with
+          [
+              _Kty=std::string,
+              _Ty=UPT::utility::Section
+          ]
+    正在创建库 D:\mycode\Cpp\UPacsTool\lib\UPT_iniParser.lib 和对象 D:\mycode\Cpp\UPacsTool\lib\UPT_iniParser.exp
+  正在生成代码
+  已完成代码的生成
+  UPT_iniParser.vcxproj -> D:\mycode\Cpp\UPacsTool\bin\UPT_iniParser.dll
